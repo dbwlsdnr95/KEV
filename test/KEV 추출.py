@@ -96,11 +96,11 @@ def fetch_and_save_as_html():
         with open(SAVE_FILENAME, 'w', encoding='utf-8') as f:
             f.write(html_content)
             
-        print(f"\n✅ 성공! 전체 {data['count']}개의 취약점 목록을 '{SAVE_FILENAME}' 파일로 저장했습니다.")
+        print(f"\n 성공! 전체 {data['count']}개의 취약점 목록을 '{SAVE_FILENAME}' 파일로 저장했습니다.")
         print(f"'{SAVE_FILENAME}' 파일을 브라우저로 열어 확인하세요.")
 
     except Exception as e:
-        print(f"❌ 작업 실패: {e}")
+        print(f" 작업 실패: {e}")
 
 # --- 스크립트 실행 ---
 fetch_and_save_as_html()
